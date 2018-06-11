@@ -1,0 +1,169 @@
+#VRML V2.0 utf8
+
+DEF body_axis Transform {
+  children [
+    DEF x-axis Transform {
+      translation 2 0 0
+      rotation 0 0 1 1.5708
+      children [
+        Material {
+          diffuseColor 0 0 1
+        }
+        Cylinder {
+          radius 0.05
+          height 4
+        }
+      ]
+    }
+    DEF y-axis Transform {
+      translation 0 2 0
+      rotation 1 0 0 0
+      bboxSize 0 0 0
+      children [
+        Material {
+          diffuseColor 1 0 0
+        }
+        Cylinder {
+          radius 0.05
+          height 4
+        }
+      ]
+    }
+    DEF z-axis Transform {
+      translation 0 0 2
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0 1 0
+        }
+        Cylinder {
+          radius 0.05
+          height 4
+        }
+      ]
+    }
+    DEF x-wing Transform {
+      children [
+        Material {
+          diffuseColor 0.6 0.6 0.6
+        }
+        Box {
+          size 4 0.4 0.4
+        }
+      ]
+    }
+    DEF y-wing Transform {
+      children [
+        Material {
+          diffuseColor 0.6 0.6 0.6
+        }
+        Box {
+          size 0.4 4 0.4
+        }
+      ]
+    }
+    DEF m4 Transform {
+      translation -2 0 0.4
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0.4 0.4 0.4
+        }
+        Cylinder {
+          radius 0.8
+          height 0.2
+        }
+      ]
+    }
+    DEF m3 Transform {
+      translation 0 -2 0.4
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0.4 0.4 0.4
+        }
+        Cylinder {
+          radius 0.8
+          height 0.2
+        }
+      ]
+    }
+    DEF m2 Transform {
+      translation 2 0 0.4
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0.4 0.4 0.4
+        }
+        Cylinder {
+          radius 0.8
+          height 0.2
+        }
+      ]
+    }
+    DEF m1 Transform {
+      translation 0 2 0.4
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0.4 0.4 0.4
+        }
+        Cylinder {
+          radius 0.8
+          height 0.2
+        }
+      ]
+    }
+  ]
+}
+DEF reference_axis Transform {
+  children [
+    Appearance {
+      material Material {
+        diffuseColor 0 1 0
+      }
+    }
+    Normal {
+    }
+    DEF xr-axis Transform {
+      translation 3 0 0
+      rotation 0 0 1 1.5708
+      children [
+        Material {
+          diffuseColor 0 0 1
+        }
+        Cylinder {
+          radius 0.01
+          height 6
+        }
+      ]
+    }
+    DEF yr-axis Transform {
+      translation 0 3 0
+      rotation 1 0 0 0
+      bboxSize 0 0 0
+      children [
+        Material {
+          diffuseColor 1 0 0
+        }
+        Cylinder {
+          radius 0.01
+          height 6
+        }
+      ]
+    }
+    DEF zr-axis Transform {
+      translation 0 0 3
+      rotation 1 0 0 1.5708
+      children [
+        Material {
+          diffuseColor 0 1 0
+        }
+        Cylinder {
+          radius 0.01
+          height 6
+        }
+      ]
+    }
+  ]
+}
